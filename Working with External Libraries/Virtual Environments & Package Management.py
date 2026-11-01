@@ -1,0 +1,53 @@
+'''
+Virtual Environments & Package Management
+This section introduces you to the world of external libraries in Python. These libraries extend Python's capabilities and allow you to perform complex tasks more easily. We'll cover virtual environments, package management, working with APIs, regular expressions, and asynchronous programming.
+
+Virtual Environments & Package Management
+As you start working on more Python projects, you'll likely use different versions of libraries. Virtual environments help isolate project dependencies, preventing conflicts between different projects.
+
+Virtual Environments:
+
+A virtual environment is a self-contained directory that contains its own Python interpreter and libraries. This means that libraries installed in one virtual environment won't interfere with libraries in another.
+
+''' 
+
+# Creating a virtual environment (using venv - recommended)
+
+# in the terminal put this, this will create virtual envirment   
+# python3 -m venv my_env  # Creates a virtual environment named "my_env"
+
+
+'''
+Package Management (using pip):
+
+pip is Python's package installer. It's used to install, upgrade, and manage external libraries.
+
+Installing a package:
+'''
+#********** put this in the terminal
+
+# pip install requests  # Installs the "requests" library
+# pip install numpy==1.20.0 # Installs a specific version
+
+# Listing installed packages:
+# pip list
+
+# Upgrading a package:
+# pip install --upgrade requests
+
+# Uninstalling a package:
+# pip uninstall requests
+
+# Generating a requirements file:
+# A requirements.txt file lists all the packages your project depends on. This makes it easy to recreate the environment on another machine.
+
+# pip freeze > requirements.txt  # Creates the requirements file
+# pip install -r requirements.txt  # Installs packages from the file
+
+# Deactivating thea virtual environment:
+# deactivate
+
+# if you want to install evry required packege you needed, just do 
+# pip install -r
+# this will install every required packege you needed
+
